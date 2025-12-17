@@ -5,10 +5,7 @@
   "colors": {
     "primary": "#7B3FF2",
     "light": "#A78BFA",
-    "dark": "#5B21B6",
-    "background": {
-      "dark": "#0F0F1E"
-    }
+    "dark": "#5B21B6"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -93,21 +90,7 @@
     "socials": {
       "x": "https://x.com/joinuniversal",
       "discord": "https://discord.gg/universal"
-    },
-    "links": [
-      {
-        "label": "Whitepaper",
-        "href": "https://universal.xyz/whitepaper"
-      },
-      {
-        "label": "Terms of Service",
-        "href": "https://universal.xyz/terms"
-      },
-      {
-        "label": "Disclaimer",
-        "href": "https://universal.xyz/disclaimer"
-      }
-    ]
+    }
   },
   "openapi": "/api-reference/openapi.json"
 }
