@@ -3,10 +3,12 @@
   "name": "Universal Protocol",
   "theme": "mint",
   "colors": {
-    "primary": "#7B3FF2",
+    "primary": "#8B5CF6",
     "light": "#A78BFA",
-    "dark": "#5B21B6"
+    "dark": "#5B21B6",
+    "anchors": "#8B5CF6"
   },
+  "backgroundImage": "/images/background.png",
   "favicon": "/favicon.svg",
   "navigation": {
     "home": "index",
@@ -58,7 +60,7 @@
         },
         {
           "anchor": "Discord",
-          "href": "https://discord.gg/universal",
+          "href": "https://discord.com/invite/universalassets",
           "icon": "discord"
         },
         {
@@ -89,7 +91,8 @@
   "footer": {
     "socials": {
       "x": "https://x.com/joinuniversal",
-      "discord": "https://discord.gg/universal"
+      "discord": "https://discord.com/invite/universalassets",
+      "github": "https://github.com/universal-protocol"
     }
   },
   "openapi": "/api-reference/openapi.json"
