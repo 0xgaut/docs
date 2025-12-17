@@ -1,0 +1,97 @@
+---
+title: "Building with uAssets"
+description: "Get started integrating Universal Protocol into your application"
+---
+
+# Building with uAssets
+
+Learn how to integrate uAssets into your decentralized application.
+
+## Overview
+
+uAssets are standard ERC-20 tokens that can be integrated into any application that supports token standards. This enables you to:
+
+- Support trading for 80+ assets across multiple chains
+- Eliminate bridging complexity for your users
+- Access deep liquidity for previously unavailable assets
+- Build cross-chain applications without bridge risk
+
+## Getting Started
+
+<CardGroup cols={2}>
+  <Card title="API Integration" icon="plug" href="/developers/api-integration">
+    Integrate the Universal API into your application
+  </Card>
+  <Card title="Contract Addresses" icon="file-contract" href="/developers/contract-addresses">
+    Find uAsset contract addresses for all chains
+  </Card>
+  <Card title="Issuance & Redemption" icon="arrows-rotate" href="/developers/issuance-redemption-api">
+    Enable minting and redemption in your app
+  </Card>
+  <Card title="uAsset Logos" icon="image" href="/developers/uasset-logos">
+    Download official logos for your UI
+  </Card>
+</CardGroup>
+
+## Integration Options
+
+### Smart Contract Integration
+
+uAssets implement the standard ERC-20 interface, making them compatible with any DeFi protocol:
+
+```solidity
+interface IERC20 {
+    function balanceOf(address account) external view returns (uint256);
+    function transfer(address to, uint256 amount) external returns (bool);
+    function approve(address spender, uint256 amount) external returns (bool);
+    function transferFrom(address from, address to, uint256 amount) external returns (bool);
+}
+```
+
+### API Integration
+
+Use the Universal API to enable minting, redemption, and other operations in your application. See the [API Integration](/developers/api-integration) guide for details.
+
+## Use Cases
+
+<AccordionGroup>
+  <Accordion title="Decentralized Exchanges" icon="arrow-right-arrow-left">
+    Integrate uAssets to offer trading pairs for assets like BTC, SOL, DOGE, and XRP without needing to bridge or maintain cross-chain infrastructure.
+  </Accordion>
+  
+  <Accordion title="Lending Protocols" icon="hand-holding-dollar">
+    Support uAssets as collateral or lending assets to expand your asset offerings across multiple chains.
+  </Accordion>
+  
+  <Accordion title="Yield Aggregators" icon="chart-mixed">
+    Enable users to earn yield on previously unavailable assets across different chains.
+  </Accordion>
+  
+  <Accordion title="Portfolio Managers" icon="briefcase">
+    Help users manage diversified portfolios with access to 80+ assets without leaving their preferred chain.
+  </Accordion>
+</AccordionGroup>
+
+## Resources
+
+<CardGroup cols={2}>
+  <Card title="View Full Docs" icon="book" href="https://docs.universal.xyz/docs">
+    Read the complete technical documentation
+  </Card>
+  <Card title="Partnerships" icon="handshake" href="/developers/partnerships">
+    Learn about partnership opportunities
+  </Card>
+  <Card title="Audits" icon="shield-check" href="https://universal.xyz/evm-audit">
+    Review security audit reports
+  </Card>
+  <Card title="Whitepaper" icon="file-lines" href="https://universal.xyz/whitepaper">
+    Read the technical whitepaper
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+<Card title="Join Discord" icon="discord" href="https://discord.gg/universal">
+  Connect with the Universal developer community
+</Card>
+

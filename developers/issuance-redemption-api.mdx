@@ -1,0 +1,90 @@
+---
+title: "Integrate the Issuance & Redemption Universal API"
+description: "Enable minting and redemption of uAssets in your application"
+---
+
+# Integrate the Issuance & Redemption Universal API
+
+The Issuance & Redemption API enables you to facilitate minting and redemption of uAssets within your application.
+
+## Overview
+
+This API allows you to:
+
+- Enable users to mint uAssets from native assets
+- Facilitate redemption of uAssets back to native assets
+- Track the status of minting and redemption requests
+- Integrate seamlessly with the merchant system
+
+## API Documentation
+
+For complete documentation on the Issuance & Redemption API, including endpoints, authentication, request/response formats, and code examples:
+
+<Card title="Issuance & Redemption API Docs" icon="book-open" href="https://docs.universal.xyz/docs">
+  View the complete API documentation
+</Card>
+
+## Key Capabilities
+
+<CardGroup cols={2}>
+  <Card title="Minting" icon="plus-circle">
+    Enable users to mint uAssets by depositing native assets
+  </Card>
+  <Card title="Redemption" icon="arrow-right-from-bracket">
+    Allow users to redeem uAssets for native assets
+  </Card>
+  <Card title="Status Tracking" icon="list-check">
+    Monitor the progress of minting and redemption requests
+  </Card>
+  <Card title="Multi-Chain Support" icon="network-wired">
+    Support operations across all Universal chains
+  </Card>
+</CardGroup>
+
+## Integration Flow
+
+### Minting Flow
+
+1. User initiates a mint request through your application
+2. Your application calls the Issuance API
+3. User deposits native assets to the provided address
+4. Merchant verifies and mints uAssets
+5. User receives uAssets on their chosen chain
+
+### Redemption Flow
+
+1. User initiates a redemption request
+2. Your application calls the Redemption API
+3. uAssets are burned
+4. Custodian releases native assets
+5. User receives native assets at specified address
+
+## Requirements
+
+<Note>
+  Access to the Issuance & Redemption API requires authorization. Contact the Universal team to discuss integration requirements.
+</Note>
+
+## Related Resources
+
+<CardGroup cols={2}>
+  <Card title="API Integration" icon="plug" href="/developers/api-integration">
+    Learn about the Universal API
+  </Card>
+  <Card title="Building with uAssets" icon="hammer" href="/developers/building-with-uassets">
+    General integration guide
+  </Card>
+  <Card title="Partnerships" icon="handshake" href="/developers/partnerships">
+    Become a Universal partner
+  </Card>
+  <Card title="Full Documentation" icon="book" href="https://docs.universal.xyz/docs">
+    View complete technical docs
+  </Card>
+</CardGroup>
+
+## Get Access
+
+<Card title="Contact Partnerships Team" icon="envelope" href="https://universal.xyz/contact">
+  Request API access and discuss your integration
+</Card>
+

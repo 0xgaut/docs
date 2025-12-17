@@ -1,33 +1,59 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: "API Documentation"
+description: "Universal Protocol API reference"
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+# API Documentation
 
-## Welcome
+The Universal API provides programmatic access to uAsset data, minting, redemption, and more.
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+## Getting Started
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+The Universal API enables you to:
+
+- Query uAsset information across all chains
+- Access real-time price data
+- Integrate minting and redemption flows
+- Retrieve contract addresses and metadata
+- Query proof of reserves data
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+API access requires authentication. Contact the Universal team to request API credentials for your integration.
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+<Card title="Request API Access" icon="key" href="https://universal.xyz/contact">
+  Get started with the Universal API
+</Card>
+
+## API Resources
+
+<CardGroup cols={2}>
+  <Card title="API Integration Guide" icon="plug" href="/developers/api-integration">
+    Learn how to integrate the Universal API
+  </Card>
+  <Card title="Issuance & Redemption" icon="arrows-rotate" href="/developers/issuance-redemption-api">
+    Enable minting and redemption
+  </Card>
+  <Card title="Full API Docs" icon="book" href="https://docs.universal.xyz/docs">
+    View complete API documentation
+  </Card>
+  <Card title="Partnerships" icon="handshake" href="/developers/partnerships">
+    Partner with Universal
+  </Card>
+</CardGroup>
+
+## Rate Limits
+
+API rate limits vary based on your integration tier. Contact the partnerships team to discuss your requirements.
+
+## Support
+
+<Card title="Developer Discord" icon="discord" href="https://discord.gg/universal">
+  Get technical support from the community
+</Card>
+
+## Related Documentation
+
+- [Building with uAssets](/developers/building-with-uassets)
+- [Contract Addresses](/developers/contract-addresses)
+- [uAsset Logos](/developers/uasset-logos)

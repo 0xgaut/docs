@@ -1,54 +1,52 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "dark",
+  "name": "Universal Protocol",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7B3FF2",
+    "light": "#A78BFA",
+    "dark": "#5B21B6",
+    "background": {
+      "dark": "#0F0F1E"
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "home": "index",
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Introduction",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Overview",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "introduction/welcome",
+              "introduction/protocol-overview",
+              "introduction/uassets",
+              "introduction/faq",
+              "introduction/proof-of-reserves"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Developers",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Getting Started",
             "pages": [
-              "api-reference/introduction"
+              "developers/building-with-uassets",
+              "developers/api-integration",
+              "developers/issuance-redemption-api",
+              "developers/contract-addresses",
+              "developers/partnerships",
+              "developers/uasset-logos"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "API Reference",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete"
+              "api-reference/introduction"
             ]
           }
         ]
@@ -57,19 +55,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Open App",
+          "href": "https://app.universal.xyz",
+          "icon": "arrow-up-right-from-square"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Discord",
+          "href": "https://discord.gg/universal",
+          "icon": "discord"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Twitter/X",
+          "href": "https://x.com/joinuniversal",
+          "icon": "x-twitter"
         }
       ]
     }
@@ -81,21 +79,35 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Proof of Reserves",
+        "href": "https://www.universal.xyz/reserves"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open App",
+      "href": "https://app.universal.xyz"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
+      "x": "https://x.com/joinuniversal",
+      "discord": "https://discord.gg/universal"
+    },
+    "links": [
+      {
+        "label": "Whitepaper",
+        "href": "https://universal.xyz/whitepaper"
+      },
+      {
+        "label": "Terms of Service",
+        "href": "https://universal.xyz/terms"
+      },
+      {
+        "label": "Disclaimer",
+        "href": "https://universal.xyz/disclaimer"
+      }
+    ]
+  },
+  "openapi": "/api-reference/openapi.json"
 }

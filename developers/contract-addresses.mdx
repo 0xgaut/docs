@@ -1,0 +1,90 @@
+---
+title: "Contract Addresses"
+description: "uAsset smart contract addresses across all supported chains"
+---
+
+# Contract Addresses
+
+Find the smart contract addresses for all uAssets across supported blockchains.
+
+## Overview
+
+uAssets are deployed as standard ERC-20 contracts across multiple chains. Use these addresses to interact with uAssets in your smart contracts and applications.
+
+<Warning>
+  Always verify contract addresses through official Universal channels before integrating. Scammers may post fake addresses.
+</Warning>
+
+## Official Contract Address Sources
+
+For the most up-to-date and official contract addresses:
+
+<Card title="View Contract Addresses" icon="file-contract" href="https://docs.universal.xyz/docs">
+  See all official contract addresses
+</Card>
+
+## Supported Chains
+
+uAssets are available on multiple blockchains, including:
+
+- Ethereum
+- Polygon
+- Arbitrum
+- Optimism
+- Base
+- And more
+
+Visit the official documentation for the complete list of supported chains and their respective contract addresses.
+
+## Integration
+
+Once you have the contract addresses, you can integrate uAssets using the standard ERC-20 interface:
+
+```solidity
+interface IERC20 {
+    function name() external view returns (string memory);
+    function symbol() external view returns (string memory);
+    function decimals() external view returns (uint8);
+    function totalSupply() external view returns (uint256);
+    function balanceOf(address account) external view returns (uint256);
+    function transfer(address to, uint256 amount) external returns (bool);
+    function allowance(address owner, address spender) external view returns (uint256);
+    function approve(address spender, uint256 amount) external returns (bool);
+    function transferFrom(address from, address to, uint256 amount) external returns (bool);
+}
+```
+
+## Verification
+
+All Universal smart contracts are:
+
+- Open source and verified on block explorers
+- Audited by leading security firms
+- Deployed through official Universal channels
+
+<CardGroup cols={2}>
+  <Card title="EVM Audit" icon="shield-check" href="https://universal.xyz/evm-audit">
+    View EVM contract audit report
+  </Card>
+  <Card title="Solana Audit" icon="shield-check" href="https://universal.xyz/solana-audit">
+    View Solana program audit report
+  </Card>
+</CardGroup>
+
+## Resources
+
+<CardGroup cols={2}>
+  <Card title="Building with uAssets" icon="hammer" href="/developers/building-with-uassets">
+    Integration guide
+  </Card>
+  <Card title="API Integration" icon="plug" href="/developers/api-integration">
+    Use the Universal API
+  </Card>
+  <Card title="uAsset Logos" icon="image" href="/developers/uasset-logos">
+    Download official logos
+  </Card>
+  <Card title="Full Documentation" icon="book" href="https://docs.universal.xyz/docs">
+    Complete technical docs
+  </Card>
+</CardGroup>
+
