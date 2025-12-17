@@ -1,6 +1,5 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "dark",
   "name": "Universal Protocol",
   "colors": {
     "primary": "#7B3FF2",
